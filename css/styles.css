@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: #1e1e1f;
+  color: #c2bfc0;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  padding: 0 10% 2rem;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    #979697 0,
+    #1e1e1f 16rem,
+    #1e1e1f calc(100% - 16rem),
+    #979697 100%
+  );
+}
+
+h1 {
+  font-family: "MonteCarlo", cursive;
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  transform: scale(1.04);
+}
+
+header,
+footer {
+  background: #979697;
+  color: #1b1a1a;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  padding: 1rem 4rem;
+}
+
+.div-logo {
+  margin-left: 3rem;
+  font-weight: bold;
+}
+
+.logo,
+.header-nav a {
+  font-family: "MonteCarlo", cursive;
+  text-decoration: none;
+  font-size: 3rem;
+  color: inherit;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.header-nav {
+  margin-right: 2rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-list li {
+  padding: 1rem;
+
+}
+
+.footer-list img {
+  width: 4rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   COLORES                                  */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  background-color: #a2a0a5;
+}
+
+.bg-secondary {
+  background-color: #cac7c7;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #171718;
+}
+
+.text-secondary {
+  color: #797877;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inicio h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 3rem;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #d4cccc;
+  width: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.card img {
+  width: 70%;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.card, p {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  align-items: center;
+}
+
+.card .btn {
+  margin-top: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-contacto {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 2rem 0;
+  color: #1e1e1f;
+
+}
+
+.form-contacto {
+  background-color: #979697;
+  color: #1e1e1f;
+
+  width: 100%;
+  max-width: 50rem;
+
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+
+  color: #1e1e1f;
+  background-color: #fff7fb;
+
+  border: 2px solid #cac7c7;
+  border-radius: 0.8rem;
+
+  outline: none;
+}
+
+.grupo-input textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+
+  .header-nav,
+  .div-logo {
+    margin: 0;
+  }
+}
